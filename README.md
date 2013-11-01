@@ -10,12 +10,22 @@ misto entre democracia direta e democracia representativa, no qual os representa
 para votar em cada tema, ao invés de serem eleitos para um mandato amplo, com duração específica. Em alguns 
 casos, na democracia líquida, o mandato específico pode ser delegado. (WIKIPEDIA, 2013)
 
-Links Relacionados:
 
+Links Relacionados:
+===================
+
+Uniritter:
+* www.uniritter.com.br
+* http://www.uniritter.edu.br/pos/tecnologia/metodos_ageis/
+
+Quadro de Tarefas
+* https://trello.com/b/NzTMrqbJ/liquid-democracy
+
+Democracia Líquida
 * http://pt.wikipedia.org/wiki/Democracia_l%C3%ADquida
 * http://partidopirata.org/o-que-e-democracia-liquida/
 * http://liquidfeedback.org/
 
+Demais Links:
 * http://zerohora.clicrbs.com.br/rs/politica/pagina/democracia-digital.html
-
 * http://pt.wikipedia.org/wiki/M%C3%A9todo_de_Schulze
