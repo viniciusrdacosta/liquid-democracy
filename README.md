@@ -18,8 +18,9 @@ Uniritter:
 * www.uniritter.com.br
 * http://www.uniritter.edu.br/pos/tecnologia/metodos_ageis/
 
-Quadro de Tarefas
-* https://trello.com/b/NzTMrqbJ/liquid-democracy
+Ferramentas Relacionadas ao Desenvolvimento
+* Quadro de Tarefas: https://trello.com/b/NzTMrqbJ/liquid-democracy
+* Software Funcionando: https://liquid-democracy-cdci.herokuapp.com
 
 Democracia Líquida
 * http://pt.wikipedia.org/wiki/Democracia_l%C3%ADquida
@@ -27,5 +28,6 @@ Democracia Líquida
 * http://liquidfeedback.org/
 
 Demais Links:
-* http://zerohora.clicrbs.com.br/rs/politica/pagina/democracia-digital.html
-* http://pt.wikipedia.org/wiki/M%C3%A9todo_de_Schulze
+* Democracia Digital: http://zerohora.clicrbs.com.br/rs/politica/pagina/democracia-digital.html
+* Método de Votação Com Múltiplas Opções: http://pt.wikipedia.org/wiki/M%C3%A9todo_de_Schulze
+* Exemplo de UI com demonstrações de projetos: http://gabinetedigital.rs.gov.br/deolho/
