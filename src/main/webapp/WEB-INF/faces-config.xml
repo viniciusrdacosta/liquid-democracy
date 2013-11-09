@@ -3,4 +3,11 @@
     xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
         http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
     version="2.2">
+	
+	   <managed-bean>
+        <managed-bean-name>Citzen</managed-bean-name>
+        <managed-bean-class>br.edu.uniritter.managedbean.Citzen</managed-bean-class>     
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+	
 </faces-config>
