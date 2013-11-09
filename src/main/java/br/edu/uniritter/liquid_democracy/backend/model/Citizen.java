@@ -1,4 +1,4 @@
-package br.edu.uniritter.managedbean;
+package br.edu.uniritter.liquid_democracy.backend.model;
 
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
@@ -9,7 +9,7 @@ import javax.faces.event.ActionEvent;
 
 @ManagedBean(name = "Citzen")
 @RequestScoped
-public class Citzen {
+public class Citizen {
 
 	private String name;
 	private String socialCC;
