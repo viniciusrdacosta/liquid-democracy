@@ -21,6 +21,7 @@ Uniritter:
 Ferramentas Relacionadas ao Desenvolvimento Deste Projeto
 * Quadro de Tarefas: https://trello.com/b/NzTMrqbJ/liquid-democracy
 * Software Funcionando: https://liquid-democracy-cdci.herokuapp.com
+* Integração Continua: https://travis-ci.org/uniritter/liquid-democracy
 
 Democracia Líquida (Artigos e apresentações)
 * http://pt.wikipedia.org/wiki/Democracia_l%C3%ADquida
