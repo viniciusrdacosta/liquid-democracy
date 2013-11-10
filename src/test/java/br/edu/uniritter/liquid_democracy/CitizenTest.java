@@ -1,16 +1,18 @@
-package br.edu.uniritter.managedbean;
+
 
 import static org.junit.Assert.*;
 
 import org.junit.*;
 
+import br.edu.uniritter.liquid_democracy.backend.model.Citizen;
+
 
 public class CitizenTest {
-	Citzen c;
+	Citizen c;
 
 	@Before
 	public void setup() {
-		c = new Citzen();
+		c = new Citizen();
 		c.setName("Milton");
 		c.setVoterRegistration("1264651XYZ");
 		c.setSocialCC("90812323129Y");
