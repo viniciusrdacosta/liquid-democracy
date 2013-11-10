@@ -7,7 +7,7 @@ import javax.faces.context.FacesContext;
 import javax.faces.event.ActionEvent;
 
 
-@ManagedBean(name = "Citzen")
+@ManagedBean(name = "Citizen")
 @RequestScoped
 public class Citizen {
 

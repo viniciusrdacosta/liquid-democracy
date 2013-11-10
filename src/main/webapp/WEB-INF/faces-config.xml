@@ -5,8 +5,8 @@
     version="2.2">
 	
 	   <managed-bean>
-        <managed-bean-name>Citzen</managed-bean-name>
-        <managed-bean-class>br.edu.uniritter.managedbean.Citzen</managed-bean-class>     
+        <managed-bean-name>Citizen</managed-bean-name>
+        <managed-bean-class>br.edu.uniritter.liquid_democracy.backend.model.Citizen</managed-bean-class>     
         <managed-bean-scope>request</managed-bean-scope>
     </managed-bean>
 	
