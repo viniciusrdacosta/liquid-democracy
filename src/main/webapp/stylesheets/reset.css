@@ -1,0 +1,47 @@
+/*
+   reset.css
+   RotaTI - Soluções em Desenvolvimento Web
+   
+   Created by Rota TI.
+   Copyright 2012 Rota TI. All rights reserved.
+*/
+
+html, textarea {
+	margin: 0;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+body, ul, li, dl, dt, dd, input, textarea, fieldset, legend {
+    padding: 0;
+	margin: 0;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+a, button, input, textarea {
+    outline: none;
+}
+
+a img {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p, h1, h2, h3, h4, h5 {
+    margin: 0 0 15px;
+}
+
+
+fieldset {
+    border: none;
+}
+
+textarea {
+    resize: none;
+}
