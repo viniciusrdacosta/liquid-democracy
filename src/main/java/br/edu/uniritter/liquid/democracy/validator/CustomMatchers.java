@@ -1,5 +1,5 @@
 /***
- * Copyright (c) 2013 SportShare - www.sportshare.me/opensource
+ * Copyright (c) 2013 Liquid Democracy
  * All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); 
