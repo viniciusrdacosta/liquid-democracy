@@ -12,11 +12,22 @@ public class Candidate extends Citizen implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	
+	@Column(name = "number")
+	Integer number;
+	
 	@Column(name = "name_in_the_urn")
 	String nameInTheUrn;
 	
 	@Column(name = "city")
 	String city;
+
+	public Integer getNumber() {
+		return number;
+	}
+
+	public void setNumber(Integer number) {
+		this.number = number;
+	}
 
 	public String getNameInTheUrn() {
 		return nameInTheUrn;

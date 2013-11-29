@@ -10,6 +10,11 @@
 	</div>
 	<form role="form"  action="<c:url value="/candidate"/>" method="post">
 		<div class="form-group">
+			<label for="number">Número do Candidato</label>
+			<input id="number" class="form-control" type="text" name="candidate.number" style="width: 300px;">
+		</div>
+
+		<div class="form-group">
 			<label for="nameInTheUrn">Nome na Urna</label>
 			<input id="nameInTheUrn" class="form-control" type="text" name="candidate.nameInTheUrn" style="width: 300px;">
 		</div>
