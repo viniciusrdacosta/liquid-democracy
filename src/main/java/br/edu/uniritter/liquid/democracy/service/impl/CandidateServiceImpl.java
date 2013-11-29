@@ -4,6 +4,7 @@ import java.io.UnsupportedEncodingException;
 import java.security.NoSuchAlgorithmException;
 
 import br.com.caelum.vraptor.ioc.Component;
+import br.edu.uniritter.liquid.democracy.model.Candidate;
 import br.edu.uniritter.liquid.democracy.model.User;
 import br.edu.uniritter.liquid.democracy.repository.CandidateRepository;
 import br.edu.uniritter.liquid.democracy.repository.SecurityRepository;
@@ -25,5 +26,4 @@ public class CandidateServiceImpl implements CandidateService {
 		// TODO Auto-generated method stub
 		
 	}
-
 }

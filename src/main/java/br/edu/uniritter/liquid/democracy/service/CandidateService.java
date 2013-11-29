@@ -1,6 +1,6 @@
 package br.edu.uniritter.liquid.democracy.service;
 
-import br.edu.uniritter.liquid.democracy.model.User;
+import br.edu.uniritter.liquid.democracy.model.Candidate;
 
 public interface CandidateService {
 
