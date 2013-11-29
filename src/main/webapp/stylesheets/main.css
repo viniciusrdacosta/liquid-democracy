@@ -9,19 +9,6 @@ body {
 	color: #5a5a5a;
 }
 
-.form-login > .form-group {
-	padding-top: 5px;
-	padding-left: 5px;
-}
-
-.form-login >. form-group > input[type="email"] {
-	width: 250px;
-}
-
-.form-login>.form-group > input[type="password"] {
-	width: 150px;
-}
-
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
@@ -117,11 +104,6 @@ body {
 	text-shadow: 0px 5px 8px #2a2a2a;
 	-moz-text-shadow: 0px 5px 8px #2a2a2a;
 	-webkit-text-shadow: 0px 5px 8px #2a2a2a;
-}
-
-.articles 
-{
-	margin-top: 30px;
 }
 
 .listArticlesAndPresentations li
