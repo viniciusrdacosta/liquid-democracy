@@ -38,4 +38,46 @@
 			</column>
 		</createTable>
 	</changeSet>
+	
+	<changeSet id="3" author="diegogualtieri">
+		<createTable tableName="area">
+			<column name="id" type="int">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="name" type="varchar(100)">
+				<constraints nullable="false" />
+			</column>
+			<column name="description" type="varchar(255)">
+				<constraints nullable="false" />
+			</column>
+		</createTable>
+	</changeSet>
+		
+	<changeSet id="4" author="diegogualtieri">
+		<createTable tableName="project">
+			<column name="id" type="int">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="code" type="varchar(10)">
+				<constraints nullable="false" />
+			</column>
+			<column name="name" type="varchar(60)">
+				<constraints nullable="false" />
+			</column>
+			<column name="author" type="varchar(60)">
+				<constraints nullable="false" />
+			</column>
+			<column name="addate" type="date">
+				<constraints nullable="false" />
+			</column>
+			<column name="description" type="varchar(255)">
+				<constraints nullable="false" />
+			</column>
+			<column name="endate" type="date">
+				<constraints nullable="false" />
+			</column>
+		</createTable>
+	</changeSet>
+	
+
 </databaseChangeLog>
