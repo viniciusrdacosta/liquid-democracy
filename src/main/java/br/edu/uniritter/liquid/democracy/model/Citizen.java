@@ -13,6 +13,7 @@ public class Citizen extends BaseEntity implements Serializable {
 
 	@Column(name = "name")
 	private String name;
+	
 	@Column(name = "cpf")
 	private String cpf;
 

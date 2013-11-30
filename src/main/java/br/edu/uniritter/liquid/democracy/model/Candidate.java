@@ -8,29 +8,10 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "candidate")
-public class Candidate extends Citizen implements Serializable {
+public abstract class Candidate extends BaseEntity implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	
-	@Column(name = "name_in_the_urn")
-	String nameInTheUrn;
-	
-	@Column(name = "city")
-	String city;
-
-	public String getNameInTheUrn() {
-		return nameInTheUrn;
-	}
-
-	public void setNameInTheUrn(String nameInTheUrn) {
-		this.nameInTheUrn = nameInTheUrn;
-	}
-
-	public String getCity() {
-		return city;
-	}
-
-	public void setCity(String city) {
-		this.city = city;
-	}
+	@Column(name = "name")
+	String name;
 }
