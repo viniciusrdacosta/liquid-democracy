@@ -7,26 +7,15 @@ import javax.persistence.Table;
 
 
 @Table(name = "area")
-public class Area implements Serializable {
+public class Area extends BaseEntity implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-
-	@Column(name = "id")
-	Integer id;
 
 	@Column(name = "name")
 	String name;
 
 	@Column(name = "description")
 	String description;
-
-	public Integer getId() {
-		return id;
-	}
-
-	public void setId(Integer id) {
-		this.id = id;
-	}
 
 	public String getName() {
 		return name;
