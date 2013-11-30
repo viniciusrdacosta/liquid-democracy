@@ -5,27 +5,15 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
-@Entity
-@Table(name = "citizen")
-public class Citizen extends BaseEntity implements Serializable {
+//@Entity
+//@Table(name = "citizen")
+public class Citizen extends Candidate implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	@Column(name = "name")
-	private String name;
-	@Column(name = "cpf")
 	private String cpf;
-
-	@Column(name = "voterRegistration")
-	private String voterRegistration;
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
+	private String password;
+	private Boolean candidate;
 
 	public String getCpf() {
 		return cpf;
@@ -35,12 +23,20 @@ public class Citizen extends BaseEntity implements Serializable {
 		this.cpf = cpf;
 	}
 
-	public String getVoterRegistration() {
-		return voterRegistration;
+	public String getPassword() {
+		return password;
 	}
 
-	public void setVoterRegistration(String voterRegistration) {
-		this.voterRegistration = voterRegistration;
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public Boolean getCandidate() {
+		return candidate;
+	}
+
+	public void setCandidate(Boolean candidate) {
+		this.candidate = candidate;
 	}
 
 }

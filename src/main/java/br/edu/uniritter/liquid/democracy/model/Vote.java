@@ -8,13 +8,14 @@ import javax.persistence.Table;
 
 //@Entity
 //@Table(name = "candidate")
-public abstract class Candidate  implements Serializable {
+public class Vote implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-	
-	//@Column(name = "number")
+
+	// @Column(name = "number")
 	private String name;
-	
+	private String description;
+
 	public String getName() {
 		return name;
 	}
@@ -22,4 +23,13 @@ public abstract class Candidate  implements Serializable {
 	public void setName(String name) {
 		this.name = name;
 	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
 }
