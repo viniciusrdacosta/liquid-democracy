@@ -6,31 +6,20 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
-@Entity
+//@Entity
 @Table(name = "candidate")
-public class Candidate extends Citizen implements Serializable {
+public abstract class Candidate  implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	
-	@Column(name = "name_in_the_urn")
-	String nameInTheUrn;
+	//@Column(name = "number")
+	private String name;
 	
-	@Column(name = "city")
-	String city;
-
-	public String getNameInTheUrn() {
-		return nameInTheUrn;
+	public String getName() {
+		return name;
 	}
 
-	public void setNameInTheUrn(String nameInTheUrn) {
-		this.nameInTheUrn = nameInTheUrn;
-	}
-
-	public String getCity() {
-		return city;
-	}
-
-	public void setCity(String city) {
-		this.city = city;
+	public void setName(String name) {
+		this.name = name;
 	}
 }

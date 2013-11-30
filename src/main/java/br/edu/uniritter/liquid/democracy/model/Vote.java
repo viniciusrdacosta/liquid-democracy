@@ -2,21 +2,19 @@ package br.edu.uniritter.liquid.democracy.model;
 
 import java.io.Serializable;
 
-
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.Table;
 
-
-@Table(name = "area")
-public class Area extends BaseEntity implements Serializable {
+//@Entity
+//@Table(name = "candidate")
+public class Vote implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	@Column(name = "name")
-	String name;
-
-	@Column(name = "description")
-	String description;
+	// @Column(name = "number")
+	private String name;
+	private String description;
 
 	public String getName() {
 		return name;
@@ -32,7 +30,6 @@ public class Area extends BaseEntity implements Serializable {
 
 	public void setDescription(String description) {
 		this.description = description;
-
 	}
 
 }
