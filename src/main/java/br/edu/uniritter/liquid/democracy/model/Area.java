@@ -2,12 +2,12 @@ package br.edu.uniritter.liquid.democracy.model;
 
 import java.io.Serializable;
 
-
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.Table;
 
-
-@Table(name = "area")
+@Entity
+@Table
 public class Area extends BaseEntity implements Serializable {
 
 	private static final long serialVersionUID = 1L;
@@ -32,7 +32,6 @@ public class Area extends BaseEntity implements Serializable {
 
 	public void setDescription(String description) {
 		this.description = description;
-
 	}
 
 }

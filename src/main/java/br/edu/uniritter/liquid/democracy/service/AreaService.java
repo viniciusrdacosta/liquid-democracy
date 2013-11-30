@@ -8,4 +8,6 @@ public interface AreaService {
 
 	
 	List<Area> findAll();
+
+	void create(Area validArea);
 }
