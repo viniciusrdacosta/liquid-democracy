@@ -2,6 +2,9 @@ package br.edu.uniritter.liquid.democracy.controller;
 
 import static br.edu.uniritter.liquid.democracy.validator.CustomMatchers.notNull;
 import static org.hamcrest.Matchers.is;
+
+import java.util.List;
+
 import br.com.caelum.vraptor.Get;
 import br.com.caelum.vraptor.Post;
 import br.com.caelum.vraptor.Resource;
@@ -30,7 +33,8 @@ public class AreaController {
 	@Public
 	@Get("/areas")
 	public void home() {
-
+		List<Area> areas = service.findAll();
+		result.include("areas", areas);
 	}
 
 	@Get("/edit")

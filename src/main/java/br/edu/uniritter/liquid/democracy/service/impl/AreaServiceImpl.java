@@ -21,7 +21,6 @@ public class AreaServiceImpl implements AreaService{
 
 	@Override
 	public List<Area> findAll() {
-		// TODO Auto-generated method stub
 		
 		return repository.findAll();
 	}
