@@ -1,6 +1,7 @@
 package br.edu.uniritter.liquid.democracy.model;
 
 import java.io.Serializable;
+<<<<<<< HEAD
 import java.util.Date;
 
 //@Entity
@@ -45,6 +46,38 @@ public class Area implements Serializable {
 
 	public void setWeight(Long weight) {
 		this.weight = weight;
+=======
+
+import javax.persistence.Column;
+import javax.persistence.Table;
+
+
+@Table(name = "area")
+public class Area extends BaseEntity implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+
+	@Column(name = "name")
+	String name;
+
+	@Column(name = "description")
+	String description;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+>>>>>>> 43e97e1daa1b84065b60d38293e193d3cf015397
 	}
 
 }
