@@ -21,4 +21,21 @@
 		</createTable>
 	</changeSet>
 
+
+	<changeSet id="2" author="cristianpietro">
+		<createTable tableName="citizen">
+			<column name="id" type="int">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="name" type="varchar(100)">
+				<constraints nullable="false" />
+			</column>
+			<column name="cpf" type="varchar(20)">
+				<constraints nullable="false" />
+			</column>
+			<column name="voterRegistration" type="varchar(20)">
+				<constraints nullable="false" />
+			</column>
+		</createTable>
+	</changeSet>
 </databaseChangeLog>
