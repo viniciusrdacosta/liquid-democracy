@@ -2,8 +2,6 @@ package br.edu.uniritter.liquid.democracy.model;
 
 import java.io.Serializable;
 import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
 
 //@Entity
 //@Table(name = "citizen")
@@ -11,6 +9,10 @@ public class Citizen extends Candidate implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
+	@Column(name = "name")
+	private String name;
+	
+	@Column(name = "cpf")
 	private String cpf;
 	private String password;
 	private Boolean candidate;
