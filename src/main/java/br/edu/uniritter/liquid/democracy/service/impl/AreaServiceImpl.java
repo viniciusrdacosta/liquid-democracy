@@ -26,4 +26,10 @@ public class AreaServiceImpl implements AreaService{
 		return repository.findAll();
 	}
 
+	@Override
+	public void create(Area validArea) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
