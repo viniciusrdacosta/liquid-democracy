@@ -15,4 +15,12 @@ public class HomeController {
 	@Public
 	@Get("/about")
 	public void about() {}
+	
+
+	@Public
+	@Get("/citizen")
+	public void citizen() {
+		System.out.println("teste");
+	}
+	
 }
