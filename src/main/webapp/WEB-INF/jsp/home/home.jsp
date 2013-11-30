@@ -1,7 +1,7 @@
-<div class="jumbotron" style="background-color: Blue">
+<div class="jumbotron" style="color: #ffffff">
 	<h1>Make a new world with liquid democracy</h1>
 	<p>Welcome to liquid democracy, the newest form of democratic control whereby voting power is vested by the people.</p>
-	<p><a class="btn btn-primary btn-lg" role="button" href="about.html">Learn more &raquo;</a></p>
+	<p><a class="btn btn-primary btn-lg" role="button" href="about">Learn more &raquo;</a></p>
 </div>
 
 <!-- Content -->
