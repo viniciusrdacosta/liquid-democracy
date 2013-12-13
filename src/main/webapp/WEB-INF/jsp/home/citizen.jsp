@@ -13,7 +13,6 @@
 				type="text" name="citizen.password" placeholder="Digite sua senha ..."
 				style="width: 300px;">
 		</div>
-
 	
 		<button id="salvar" type="submit" class="btn btn-default">register</button>
 	</form>
