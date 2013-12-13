@@ -16,6 +16,7 @@
 					<tr>
 						<td style="width: 50%">${area.name}</td>
 						<td style="width: 50%">${area.description}</td>
+						<td>x</td>
 					</tr>
 				</tbody>
 			</c:forEach>
