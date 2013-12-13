@@ -16,7 +16,7 @@
 					<tr>
 						<td style="width: 50%">${area.name}</td>
 						<td style="width: 50%">${area.description}</td>
-						<td>x</td>
+						<td><a href="<c:url value="/area/delete"/>">X</a></td>
 					</tr>
 				</tbody>
 			</c:forEach>
