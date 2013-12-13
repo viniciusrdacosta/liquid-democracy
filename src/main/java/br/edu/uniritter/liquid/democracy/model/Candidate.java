@@ -6,14 +6,16 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
-//@Entity
-//@Table(name = "candidate")
-public abstract class Candidate  implements Serializable {
+
+
+@Entity
+@Table(name = "candidate")
+public abstract class Candidate extends BaseEntity implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	
-	//@Column(name = "number")
-	private String name;
+	@Column(name = "name")
+	String name;
 	
 	public String getName() {
 		return name;
@@ -22,4 +24,5 @@ public abstract class Candidate  implements Serializable {
 	public void setName(String name) {
 		this.name = name;
 	}
+
 }

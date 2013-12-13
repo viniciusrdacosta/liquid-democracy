@@ -10,20 +10,9 @@
 	</div>
 	<form role="form"  action="<c:url value="/candidate"/>" method="post">
 		<div class="form-group">
-			<label for="number">Número do Candidato</label>
-			<input id="number" class="form-control" type="text" name="candidate.number" style="width: 300px;">
+			<label for="name">Nome</label>
+			<input id="name" class="form-control" type="text" name="candidate.name" style="width: 300px;">
 		</div>
-
-		<div class="form-group">
-			<label for="nameInTheUrn">Nome na Urna</label>
-			<input id="nameInTheUrn" class="form-control" type="text" name="candidate.nameInTheUrn" style="width: 300px;">
-		</div>
-		
-		<div class="form-group">
-			<label for="city">Cidade de Candidatura</label>
-			<input id="city" class="form-control" type="text" name="candidate.city" style="width: 300px;">
-		</div>
-
 		<button id="addCandidate" type="submit" class="btn btn-default">Cadastrar</button>
 	</form>
 	
