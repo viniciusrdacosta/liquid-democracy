@@ -46,6 +46,13 @@ public class AreaController {
 		validate(area);
 		service.create(area);
 	}
+	
+	@Public
+	@Post("/area/delete")
+	public void delete(Area area) {
+		validate(area);
+		service.delete(area);
+	}
 
 	private void validate(final Area area) {
 		validator.checking(new Validations() {
