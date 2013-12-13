@@ -23,10 +23,16 @@
 	</head>
 	<body>
 		<%@ include file="../template/header.jsp" %> 
-		<div class="container marketing">
+		<c:if test="${errors.size() > 0}">
+			<div class="alert alert-danger alert-dismissable">
+		  		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+				<c:forEach var="error" items="${errors}">
+			  		<strong>Error !</strong> ${error.message}
+				</c:forEach>
+			</div>
+		</c:if>
 			<decorator:body/>
-			<%@ include file="../template/footer.jsp" %>
-		</div>	  
+		<%@ include file="../template/footer.jsp" %>
 		<script type="text/javascript" src="${pageContext.request.contextPath}/javascripts/main.js"></script>
 		<script type="text/javascript" src="${pageContext.request.contextPath}/javascripts/lib/jquery.min.js"></script>
 		<script type="text/javascript" src="${pageContext.request.contextPath}/javascripts/lib/bootstrap.min.js"></script>

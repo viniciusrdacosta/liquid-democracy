@@ -10,7 +10,8 @@ import javax.persistence.Table;
 @Table(name = "area")
 public class Area extends BaseEntity implements Serializable {
 
-	private static final long serialVersionUID = 1L;
+
+	private static final long serialVersionUID = 1431969740928027523L;
 
 	@Column(name = "name")
 	String name;
