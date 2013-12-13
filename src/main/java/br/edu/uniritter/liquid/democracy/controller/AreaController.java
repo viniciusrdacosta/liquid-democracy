@@ -13,7 +13,6 @@ import br.com.caelum.vraptor.Validator;
 import br.com.caelum.vraptor.validator.Validations;
 import br.edu.uniritter.liquid.democracy.annotation.Public;
 import br.edu.uniritter.liquid.democracy.model.Area;
-import br.edu.uniritter.liquid.democracy.model.User;
 import br.edu.uniritter.liquid.democracy.service.AreaService;
 
 @Resource
@@ -23,23 +22,29 @@ public class AreaController {
 	private AreaService service;
 	private final Validator validator;
 
-	public AreaController(Result result, AreaService service,
-			Validator validator) {
+	public AreaController(Result result, AreaService service, Validator validator) {
 		this.result = result;
 		this.service = service;
 		this.validator = validator;
 	}
 
 	@Public
-	@Get("/areas")
+	@Get("/area")
 	public void home() {
 		List<Area> areas = service.findAll();
 		result.include("areas", areas);
 	}
-
-	@Get("/edit")
+	
+	@Public
+	@Get("/area/new")
 	public void add() {
-
+	}
+	
+	@Public
+	@Post("/area/new")
+	public void add(Area area) {
+		validate(area);
+		service.create(area);
 	}
 
 	private void validate(final Area area) {
@@ -48,14 +53,8 @@ public class AreaController {
 				that(area, is(notNull()), "erro", "Erro ao validar Area.");
 			}			
 		});
-		validator.onErrorUsePageOf(AreaController.class).add(area);
+		
+		validator.onErrorUsePageOf(AreaController.class).add();
 
-	}
-
-	@Public
-	@Post("/area/add")
-	public void add(Area area) {
-		validate(area);
-		service.create(area);
 	}
 }

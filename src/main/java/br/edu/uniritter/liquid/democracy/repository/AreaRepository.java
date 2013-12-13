@@ -6,6 +6,13 @@ import br.edu.uniritter.liquid.democracy.model.Area;
 
 public interface AreaRepository {
 
-	
 	List<Area> findAll();
+	
+	void create(Area area);
+	
+	Area update(Area area);
+	
+	void delete(Area area);
+	
+	List<Area> findByName(String name);
 }
