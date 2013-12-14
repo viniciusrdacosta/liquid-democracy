@@ -34,9 +34,5 @@ public class VoteServiceImpl implements VoteService {
 		repository.delete(vote);
 	}
 
-	@Override
-	public List<Vote> findByName(String name) {
-		return repository.findByName(name);
-	}
 
 }

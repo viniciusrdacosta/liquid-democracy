@@ -14,6 +14,5 @@ public interface VoteRepository  {
 	
 	void delete(Vote vote);
 	
-	List<Vote> findByName(String name);
 	
 }
