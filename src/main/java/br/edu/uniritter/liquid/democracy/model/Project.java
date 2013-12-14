@@ -3,84 +3,74 @@ package br.edu.uniritter.liquid.democracy.model;
 import java.io.Serializable;
 import java.util.Date;
 
-//@Entity
-//@Table(name = "candidate")
-public class Project implements Serializable {
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "Project")
+public class Project extends BaseEntity implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	// @Column(name = "number")
-	private Area area;
-	private String identification;
+	//@Column(name = "project")
+	//private Project project;
+	
+	@Column(name = "code")
+	private String code;
+	
+	@Column(name = "name")
 	private String name;
+	
+	@Column(name = "author")
+	private String author;
+
+	@Column(name = "addate")
+	private Date addate;
+	
+	@Column(name = "description")
 	private String description;
-	private Candidate author;
-	private Date created;
-	private Date initialDate;
-	private Date finalDate;
-
-	public Area getArea() {
-		return area;
+	
+	@Column(name = "endate")
+	private Date endate;
+	
+	public String getCode() {
+		return code;
 	}
-
-	public void setArea(Area area) {
-		this.area = area;
+	public void setCode(String code) {
+		this.code = code;
 	}
-
-	public String getIdentification() {
-		return identification;
-	}
-
-	public void setIdentification(String identification) {
-		this.identification = identification;
-	}
-
 	public String getName() {
 		return name;
 	}
-
 	public void setName(String name) {
 		this.name = name;
 	}
-
+	public String getAuthor() {
+		return author;
+	}
+	public void setAuthor(String author) {
+		this.author = author;
+	}
+	public Date getAddate() {
+		return addate;
+	}
+	public void setAddate(Date addate) {
+		this.addate = addate;
+	}
 	public String getDescription() {
 		return description;
 	}
-
 	public void setDescription(String description) {
 		this.description = description;
 	}
-
-	public Candidate getAuthor() {
-		return author;
+	public Date getEndate() {
+		return endate;
 	}
-
-	public void setAuthor(Candidate author) {
-		this.author = author;
+	public void setEndate(Date endate) {
+		this.endate = endate;
 	}
-
-	public Date getCreated() {
-		return created;
-	}
-
-	public void setCreated(Date created) {
-		this.created = created;
-	}
-
-	public Date getInitialDate() {
-		return initialDate;
-	}
-
-	public void setInitialDate(Date initialDate) {
-		this.initialDate = initialDate;
-	}
-
-	public Date getFinalDate() {
-		return finalDate;
-	}
-
-	public void setFinalDate(Date finalDate) {
-		this.finalDate = finalDate;
-	}
+	
+	
 
 }
