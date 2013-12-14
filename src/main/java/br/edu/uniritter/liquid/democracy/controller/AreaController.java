@@ -5,7 +5,6 @@ import static org.hamcrest.Matchers.is;
 
 import java.util.List;
 
-import br.com.caelum.vraptor.Delete;
 import br.com.caelum.vraptor.Get;
 import br.com.caelum.vraptor.Post;
 import br.com.caelum.vraptor.Resource;
