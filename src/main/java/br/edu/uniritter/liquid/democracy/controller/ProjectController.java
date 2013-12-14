@@ -5,7 +5,6 @@ import static org.hamcrest.Matchers.is;
 
 import java.util.List;
 
-import br.com.caelum.vraptor.Delete;
 import br.com.caelum.vraptor.Get;
 import br.com.caelum.vraptor.Post;
 import br.com.caelum.vraptor.Resource;
@@ -13,56 +12,49 @@ import br.com.caelum.vraptor.Result;
 import br.com.caelum.vraptor.Validator;
 import br.com.caelum.vraptor.validator.Validations;
 import br.edu.uniritter.liquid.democracy.annotation.Public;
-import br.edu.uniritter.liquid.democracy.model.Area;
-import br.edu.uniritter.liquid.democracy.service.AreaService;
+import br.edu.uniritter.liquid.democracy.model.Project;
+import br.edu.uniritter.liquid.democracy.service.ProjectService;
 
 @Resource
-public class AreaController {
+public class ProjectController {
 
 	private Result result;
-	private AreaService service;
+	private ProjectService service;
 	private final Validator validator;
 
-	public AreaController(Result result, AreaService service, Validator validator) {
+	public ProjectController(Result result, ProjectService service, Validator validator) {
 		this.result = result;
 		this.service = service;
 		this.validator = validator;
 	}
 
 	@Public
-	@Get("/area")
+	@Get("/project")
 	public void home() {
-		List<Area> areas = service.findAll();
-		result.include("areas", areas);
+		List<Project> projects = service.findAll();
+		result.include("projects", projects);
 	}
 	
 	@Public
-	@Get("/area/new")
+	@Get("/project/new")
 	public void add() {
 	}
 	
 	@Public
-	@Post("/area/new")
-	public void add(Area area) {
-		validate(area);
-		service.create(area);
-	}
-	
-	@Public
-	@Post("/area/delete/{area}")
-	public void delete(Area area) {
-		validate(area);
-		service.delete(area);
+	@Post("/project/new")
+	public void add(Project project) {
+		validate(project);
+		service.create(project);
 	}
 
-	private void validate(final Area area) {
+	private void validate(final Project project) {
 		validator.checking(new Validations() {
 			{
-				that(area, is(notNull()), "erro", "Erro ao validar Area.");
+				that(project, is(notNull()), "erro", "Erro ao validar Project.");
 			}			
 		});
 		
-		validator.onErrorUsePageOf(AreaController.class).add();
+		validator.onErrorUsePageOf(ProjectController.class).add();
 
 	}
 }
