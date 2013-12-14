@@ -8,10 +8,7 @@
 
 	<context-param>
 		<param-name>br.com.caelum.vraptor.packages</param-name>
-		<param-value>br.com.caelum.vraptor.util.jpa,
-        	br.com.caelum.vraptor.deserialization.gson,
-        	br.com.caelum.vraptor.serialization.gson.adapters,
-			br.com.caelum.vraptor.serialization.gson
+		<param-value>br.com.caelum.vraptor.util.jpa
         </param-value>
 	</context-param>
 
@@ -29,6 +26,8 @@
 	<filter-mapping>
 		<filter-name>sitemesh</filter-name>
 		<url-pattern>/*</url-pattern>
+		<dispatcher>FORWARD</dispatcher>
+		<dispatcher>REQUEST</dispatcher>
 	</filter-mapping>
 
 	<filter>

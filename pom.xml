@@ -72,19 +72,6 @@
 					</execution>
 				</executions>
 			</plugin>
-
-			<plugin>
-				<groupId>org.liquibase</groupId>
-				<artifactId>liquibase-maven-plugin</artifactId>
-				<version>3.0.7</version>
-				<configuration>
-					<changeLogFile>src/main/resources/liquidbase/db-changelog.xml</changeLogFile>
-					<driver>org.postgresql.Driver</driver>
-					<url>jdbc:postgresql://localhost:5432/dev_liquid_democracy</url>
-					<username>app_liquid_democracy</username>
-					<password>app_liquid_democracy</password>
-				</configuration>
-			</plugin>
 		</plugins>
 	</build>
 
@@ -158,16 +145,6 @@
 			<groupId>postgresql</groupId>
 			<artifactId>postgresql</artifactId>
 			<version>9.2-1002.jdbc4</version>
-		</dependency>
-		<dependency>
-			<groupId>org.liquibase</groupId>
-			<artifactId>liquibase-core</artifactId>
-			<version>3.0.7</version>
-		</dependency>
-		<dependency>
-			<groupId>org.liquibase</groupId>
-			<artifactId>liquibase-maven-plugin</artifactId>
-			<version>3.0.7</version>
 		</dependency>
 		<dependency>
 			<groupId>br.com.caelum.vraptor</groupId>
