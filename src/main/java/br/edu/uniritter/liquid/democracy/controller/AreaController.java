@@ -5,6 +5,7 @@ import static org.hamcrest.Matchers.is;
 
 import java.util.List;
 
+import br.com.caelum.vraptor.Delete;
 import br.com.caelum.vraptor.Get;
 import br.com.caelum.vraptor.Post;
 import br.com.caelum.vraptor.Resource;
@@ -48,7 +49,7 @@ public class AreaController {
 	}
 	
 	@Public
-	@Post("/area/delete")
+	@Delete("/area/delete/{area}")
 	public void delete(Area area) {
 		validate(area);
 		service.delete(area);
