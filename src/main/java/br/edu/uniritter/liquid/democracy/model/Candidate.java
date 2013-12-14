@@ -3,15 +3,11 @@ package br.edu.uniritter.liquid.democracy.model;
 import java.io.Serializable;
 
 import javax.persistence.Column;
-import javax.persistence.Embeddable;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.MappedSuperclass;
 
-
-@Embeddable
-@Entity
-@Table(name = "candidate")
-
+//@Entity
+//@Table(name = "candidate")
+@MappedSuperclass
 public abstract class Candidate extends BaseEntity implements Serializable {
 
 	private static final long serialVersionUID = 1L;

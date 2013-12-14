@@ -84,5 +84,51 @@
 			minValue="1" schemaName="public" sequenceName="hibernate_sequence"
 			startValue="1" />
 	</changeSet>
-
+	
+	<changeSet id="6" author="centeno">
+		<dropTable tableName="citizen" cascadeConstraints="true" />	
+		<createTable tableName="citizen">
+			<column name="id" type="int">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="name" type="varchar(255)">
+				<constraints nullable="false" />
+			</column>
+			<column name="candidate" type="boolean">
+				<constraints nullable="false" />
+			</column>
+			<column name="cpf" type="varchar(14)">
+				<constraints nullable="false" />
+			</column>
+			<column name="password" type="varchar(255)">
+				<constraints nullable="false" />
+			</column>
+		</createTable>
+		<createTable tableName="organization">
+			<column name="id" type="int">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="name" type="varchar(255)">
+				<constraints nullable="false" />
+			</column>
+		</createTable>
+		<createTable tableName="organization_members">
+			<column name="organization_id" type="int">
+				<constraints nullable="false" />
+			</column>
+			<column name="members_id" type="int">
+				<constraints nullable="false" />
+			</column>
+		</createTable>
+		<addForeignKeyConstraint constraintName="fk_om_organization"
+			baseTableName="organization_members"
+			baseColumnNames="organization_id"
+            referencedTableName="organization"
+            referencedColumnNames="id" />
+		<addForeignKeyConstraint constraintName="fk_om_members"
+			baseTableName="organization_members"
+			baseColumnNames="members_id"
+            referencedTableName="citizen"
+            referencedColumnNames="id" />
+	</changeSet>
 </databaseChangeLog>
