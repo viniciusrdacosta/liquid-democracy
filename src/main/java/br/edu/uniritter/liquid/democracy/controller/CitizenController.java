@@ -21,37 +21,38 @@ public class CitizenController {
 	private Result result;
 	private CitizenService service;
 	private final Validator validator;
-	
+
 	public CitizenController(Result result, CitizenService service, Validator validator) {
 		this.result = result;
 		this.service = service;
 		this.validator = validator;
 	}
-	
-	@Get("/citizens")
-	public void citizens() {
+
+	@Public
+	@Get("/citizen")
+	public void home() {
 		List<Citizen> citizens = service.findAll();
 		result.include("citizens", citizens);
 	}
-	
+
 	@Public
-	@Get("/area/new")
+	@Get("/citizen/new")
 	public void add() {
-		
+
 	}
-	
-	@Post("/citizens")
+
+	@Post("/citizen/new")
 	public void add(Citizen citizen) {
 		validate(citizen);
 		service.create(citizen);
 
 	}
-	
+
 	private void validate(final Citizen citizen) {
 		validator.checking(new Validations() {
 			{
 				that(citizen, is(notNull()), "erro", "Erro ao validar Citizen.");
-			}			
+			}
 		});
 
 		validator.onErrorUsePageOf(CitizenController.class).add();

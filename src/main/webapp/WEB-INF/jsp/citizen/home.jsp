@@ -16,14 +16,14 @@
 					<td style="width: 20%">${citizen.cpf}</td>
 					<td style="width: 20%">${citizen.cpf}</td>
 					<td style="width: 10%">
-						<form role="form" action="<c:url value="/citizen/delete"${area}/>" method="post">
+						<form role="form" action="<c:url value="/citizen/delete"/>" method="post">
 							<button type="submit" class="btn btn-default">X</button>
 						</form>
 					</td>
 				</tr>
 			</tbody>
 		</c:forEach>
-		<c:if test="${areas.size() <= 0}">
+		<c:if test="${fn:length(citizens) <= 0 }">
 			<td colspan="3" style="text-align: center;">No Records Found.</td>
 		</c:if>
 	</table>

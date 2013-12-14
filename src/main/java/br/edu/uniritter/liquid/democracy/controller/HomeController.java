@@ -28,11 +28,4 @@ public class HomeController {
 	@Get("/about")
 	public void about() {}
 	
-
-	@Public
-	@Get("/citizen")
-	public void citizen() {
-		System.out.println("teste");
-	}
-	
 }

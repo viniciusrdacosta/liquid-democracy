@@ -20,7 +20,7 @@ public class Organization extends Candidate implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	@Column(name = "name")
+	@Column(name = "description")
 	private String description;
 	
 	//@ElementCollection(targetClass = Citizen.class)

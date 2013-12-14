@@ -14,9 +14,6 @@ import javax.persistence.Table;
 public class Citizen extends Candidate implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-
-	@Column(name = "name")
-	private String name;
 	
 	@Column(name = "cpf")
 	private String cpf;

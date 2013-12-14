@@ -32,7 +32,7 @@
 					</tr>
 				</tbody>
 			</c:forEach>
-			<c:if test="${projects.size() <= 0}">
+			<c:if test="${fn:length(projects) <= 0 }">
 				<td colspan="2" style="text-align: center;">No Records Found.</td>
 			</c:if>
 		</table>

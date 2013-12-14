@@ -2,10 +2,12 @@ package br.edu.uniritter.liquid.democracy.service.impl;
 
 import java.util.List;
 
+import br.com.caelum.vraptor.ioc.Component;
 import br.edu.uniritter.liquid.democracy.model.Vote;
 import br.edu.uniritter.liquid.democracy.repository.VoteRepository;
 import br.edu.uniritter.liquid.democracy.service.VoteService;
 
+@Component
 public class VoteServiceImpl implements VoteService {
 
 	private final VoteRepository repository;
