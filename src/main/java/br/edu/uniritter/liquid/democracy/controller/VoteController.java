@@ -29,8 +29,8 @@ public class VoteController {
 	@Public
 	@Get("/vote")
 	public void home() {
-		List<Vote> areas = service.findAll();
-		result.include("areas", areas);
+		List<Vote> votes = service.findAll();
+		result.include("votes", votes);
 	}
 	
 	@Public

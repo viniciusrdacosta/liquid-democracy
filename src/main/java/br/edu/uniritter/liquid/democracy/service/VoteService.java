@@ -14,6 +14,5 @@ public interface VoteService {
 	Vote update(Vote vote);
 	
 	void delete(Vote vote);
-	
-	List<Vote> findByName(String name);
+
 }
