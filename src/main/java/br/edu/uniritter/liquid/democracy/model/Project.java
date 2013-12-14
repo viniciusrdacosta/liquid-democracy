@@ -3,13 +3,17 @@ package br.edu.uniritter.liquid.democracy.model;
 import java.io.Serializable;
 import java.util.Date;
 
-//@Entity
-//@Table(name = "candidate")
-public class Project implements Serializable {
+import javax.persistence.Embeddable;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "project")
+public class Project extends BaseEntity implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	// @Column(name = "number")
 	private Area area;
 	private String identification;
 	private String name;
