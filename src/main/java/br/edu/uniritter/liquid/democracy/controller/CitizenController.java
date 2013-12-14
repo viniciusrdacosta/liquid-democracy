@@ -11,6 +11,7 @@ import br.com.caelum.vraptor.Resource;
 import br.com.caelum.vraptor.Result;
 import br.com.caelum.vraptor.Validator;
 import br.com.caelum.vraptor.validator.Validations;
+import br.edu.uniritter.liquid.democracy.annotation.Public;
 import br.edu.uniritter.liquid.democracy.model.Citizen;
 import br.edu.uniritter.liquid.democracy.service.CitizenService;
 
@@ -33,6 +34,12 @@ public class CitizenController {
 		result.include("citizens", citizens);
 	}
 	
+	@Public
+	@Get("/area/new")
+	public void add() {
+		
+	}
+	
 	@Post("/citizens")
 	public void add(Citizen citizen) {
 		validate(citizen);
@@ -46,10 +53,8 @@ public class CitizenController {
 				that(citizen, is(notNull()), "erro", "Erro ao validar Citizen.");
 			}			
 		});
-<<<<<<< HEAD
+
 		validator.onErrorUsePageOf(CitizenController.class).add();
-=======
-		validator.onErrorUsePageOf(ProjectController.class).add();
->>>>>>> 5eb408aa5145ed5336c4712bc59ea628dd0154bd
+
 	}
 }
