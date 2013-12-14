@@ -3,13 +3,7 @@ package br.edu.uniritter.liquid.democracy.model;
 import java.io.Serializable;
 
 import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Inheritance;
-import javax.persistence.InheritanceType;
 import javax.persistence.MappedSuperclass;
-import javax.persistence.Table;
-
-
 
 //@Entity
 //@Table(name = "candidate")

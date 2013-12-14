@@ -12,6 +12,7 @@ import br.com.caelum.vraptor.Result;
 import br.com.caelum.vraptor.Validator;
 import br.com.caelum.vraptor.validator.Validations;
 import br.edu.uniritter.liquid.democracy.annotation.Public;
+import br.edu.uniritter.liquid.democracy.model.Area;
 import br.edu.uniritter.liquid.democracy.model.Project;
 import br.edu.uniritter.liquid.democracy.service.ProjectService;
 
@@ -46,6 +47,15 @@ public class ProjectController {
 		validate(project);
 		service.create(project);
 	}
+	
+	@Public
+	@Post("/project/delete/{project}")
+	public void delete(Project project) {
+		validate(project);
+		service.delete(project);
+		result.redirectTo(this).home();
+	}
+
 
 	private void validate(final Project project) {
 		validator.checking(new Validations() {
