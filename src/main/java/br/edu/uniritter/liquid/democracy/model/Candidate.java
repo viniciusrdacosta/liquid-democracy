@@ -4,12 +4,16 @@ import java.io.Serializable;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
+import javax.persistence.MappedSuperclass;
 import javax.persistence.Table;
 
 
 
-@Entity
-@Table(name = "candidate")
+//@Entity
+//@Table(name = "candidate")
+@MappedSuperclass
 public abstract class Candidate extends BaseEntity implements Serializable {
 
 	private static final long serialVersionUID = 1L;
