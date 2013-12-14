@@ -4,6 +4,7 @@ import java.util.List;
 
 import br.edu.uniritter.liquid.democracy.model.Citizen;
 
+<<<<<<< HEAD
 public interface CitizenRepository {
 
 	List<Citizen> findAll();
@@ -630,6 +631,8 @@ import java.util.List;
 
 import br.edu.uniritter.liquid.democracy.model.Citizen;
 
+=======
+>>>>>>> 5eb408aa5145ed5336c4712bc59ea628dd0154bd
 public interface CitizenRepository  {
 	
 	List<Citizen> findAll();

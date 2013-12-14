@@ -5,8 +5,13 @@ import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
 
+<<<<<<< HEAD
 @Entity
 @Table(name = "candidate")
+=======
+//@Entity
+//@Table(name = "candidate")
+>>>>>>> 5eb408aa5145ed5336c4712bc59ea628dd0154bd
 @MappedSuperclass
 public abstract class Candidate extends BaseEntity implements Serializable {
 

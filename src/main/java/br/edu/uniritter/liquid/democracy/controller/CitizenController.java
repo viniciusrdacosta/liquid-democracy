@@ -46,6 +46,10 @@ public class CitizenController {
 				that(citizen, is(notNull()), "erro", "Erro ao validar Citizen.");
 			}			
 		});
+<<<<<<< HEAD
 		validator.onErrorUsePageOf(CitizenController.class).add();
+=======
+		validator.onErrorUsePageOf(ProjectController.class).add();
+>>>>>>> 5eb408aa5145ed5336c4712bc59ea628dd0154bd
 	}
 }
