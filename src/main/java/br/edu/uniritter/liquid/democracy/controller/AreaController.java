@@ -49,7 +49,7 @@ public class AreaController {
 	}
 	
 	@Public
-	@Delete("/area/delete/{area}")
+	@Post("/area/delete/{area}")
 	public void delete(Area area) {
 		validate(area);
 		service.delete(area);
