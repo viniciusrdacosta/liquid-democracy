@@ -13,9 +13,15 @@
 		<div class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
 				<li><a href="about">About</a></li>
+<<<<<<< HEAD
 				<li><a href="area">Areas</a></li>
 				<li><a href="projects">Projects</a></li>
 				<li><a href="citizens">Citizens</a></li>
+=======
+				<li><a href="<c:url value="/area"/>">Areas</a></li>
+				<li><a href="<c:url value="/project"/>">Projects</a></li>
+				<li><a href="candidates">Candidates</a></li>
+>>>>>>> 4bf23f7f03ff542499bd71ecf63b5ed00b61432a
 				<li><a href="#contact">Contact</a></li>
 			</ul>
 			<c:choose>

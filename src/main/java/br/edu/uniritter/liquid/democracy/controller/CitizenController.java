@@ -13,7 +13,7 @@ import br.edu.uniritter.liquid.democracy.service.CitizenService;
 
 @Resource
 public class CitizenController {
-	/*
+
 	private Result result;
 	private CitizenService service;
 	private final Validator validator;
@@ -23,7 +23,6 @@ public class CitizenController {
 		this.service = service;
 		this.validator = validator;
 	}
-*/
 	
 	@Public
 	@Get("/citizen")

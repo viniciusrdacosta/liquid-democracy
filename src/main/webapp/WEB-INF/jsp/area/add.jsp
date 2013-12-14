@@ -3,7 +3,7 @@
 		<h1>New Area</h1>
 	</div>
 	
-	<form role="form"  action="<c:url value="/area/new"/>" method="post">
+	<form role="form" action="<c:url value="/area/new"/>" method="post">
 		<div class="form-group">
 			<label for="name">Name</label>
 			<input id="name" class="form-control" type="text" name="area.name" placeholder="Enter the area's name  ..." style="width: 300px;" required>

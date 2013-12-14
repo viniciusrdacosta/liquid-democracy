@@ -9,39 +9,9 @@ import br.edu.uniritter.liquid.democracy.service.CitizenService;
 
 @Component
 public class CitizenServiceImpl implements CitizenService {
-
-	@Override
-	public List<Citizen> findAll() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public void create(Citizen citizen) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public Citizen update(Citizen citizen) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public void delete(Citizen citizen) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public List<Citizen> findByName(String name) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	/*
-	private final CitizenRepository repository;
 	
+	private final CitizenRepository repository;
+
 	public CitizenServiceImpl(CitizenRepository repository) {
 		this.repository = repository;
 	}
@@ -70,5 +40,4 @@ public class CitizenServiceImpl implements CitizenService {
 	public List<Citizen> findByName(String name) {
 		return repository.findByName(name);
 	}
-	*/
 }
