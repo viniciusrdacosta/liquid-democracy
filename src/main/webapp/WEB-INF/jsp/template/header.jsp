@@ -13,8 +13,8 @@
 		<div class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
 				<li><a href="about">About</a></li>
-				<li><a href="areas">Areas</a></li>
-				<li><a href="projects">Projects</a></li>
+				<li><a href="<c:url value="/area"/>">Areas</a></li>
+				<li><a href="<c:url value="/project"/>">Projects</a></li>
 				<li><a href="candidates">Candidates</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>

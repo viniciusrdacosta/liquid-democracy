@@ -16,6 +16,11 @@
 					<tr>
 						<td style="width: 50%">${area.name}</td>
 						<td style="width: 50%">${area.description}</td>
+						<td>
+							<form role="form" action="<c:url value="/area/delete"${area}/>" method="post">
+								<button type="submit" class="btn btn-default">X</button>
+							</form>
+						</td>
 					</tr>
 				</tbody>
 			</c:forEach>
