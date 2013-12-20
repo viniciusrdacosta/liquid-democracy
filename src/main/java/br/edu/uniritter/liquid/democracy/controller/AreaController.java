@@ -48,10 +48,10 @@ public class AreaController {
 	}
 	
 	@Public
-	@Post("/area/delete/{area}")
-	public void delete(Area area) {
-		validate(area);
-		service.delete(area);
+	@Post("/area/delete/{id}")
+	public void delete(Long id) {
+		service.delete(id);
+		result.forwardTo(this).home();
 	}
 
 	private void validate(final Area area) {

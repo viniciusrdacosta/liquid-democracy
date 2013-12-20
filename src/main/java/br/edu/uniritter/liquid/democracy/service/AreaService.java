@@ -12,7 +12,7 @@ public interface AreaService {
 	
 	Area update(Area area);
 	
-	void delete(Area area);
+	void delete(Long id);
 	
 	List<Area> findByName(String name);
 }

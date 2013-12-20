@@ -32,8 +32,8 @@ public class AreaServiceImpl implements AreaService{
 	}
 
 	@Override
-	public void delete(Area area) {
-		repository.delete(area);
+	public void delete(Long id) {
+		repository.delete(id);
 	}
 
 	@Override

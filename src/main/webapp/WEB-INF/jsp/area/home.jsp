@@ -17,7 +17,7 @@
 						<td style="width: 50%">${area.name}</td>
 						<td style="width: 50%">${area.description}</td>
 						<td>
-							<form role="form" action="<c:url value="/area/delete/${area}"/>" method="post">
+							<form role="form" action="<c:url value="/area/delete/${area.id}"/>" method="post">
 								<button type="submit" class="btn btn-default">X</button>
 							</form>
 						</td>
