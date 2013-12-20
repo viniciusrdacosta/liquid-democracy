@@ -13,17 +13,16 @@ import javax.persistence.Table;
 @Inheritance(strategy = InheritanceType.JOINED)
 public class Citizen extends Candidate implements Serializable {
 
-	private static final long serialVersionUID = 1L;
-	
+	private static final long serialVersionUID = -3440091721303603893L;
+
 	@Column(name = "cpf")
 	private String cpf;
-	
+
 	@Column(name = "password")
 	private String password;
-	
+
 	@Column(name = "candidate")
 	private Boolean candidate;
-
 
 	public String getCpf() {
 		return cpf;
