@@ -8,7 +8,7 @@
 	<div class="page-header">
 		<h1>Delegar Voto</h1>
 	</div>
-	<form role="form"  action="<c:url value="/vote"/>" method="post">
+	<form role="form"  action="<c:url value="/vote/new"/>" method="post">
 		<div class="form-group">
 			<label for="name">Nome</label>
 			<input id="name" class="form-control" type="text" name="vote.name" style="width: 300px;">
