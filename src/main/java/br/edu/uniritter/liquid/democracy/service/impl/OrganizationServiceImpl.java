@@ -3,7 +3,6 @@ package br.edu.uniritter.liquid.democracy.service.impl;
 import java.util.List;
 
 import br.com.caelum.vraptor.ioc.Component;
-import br.edu.uniritter.liquid.democracy.model.Citizen;
 import br.edu.uniritter.liquid.democracy.model.Organization;
 import br.edu.uniritter.liquid.democracy.repository.OrganizationRepository;
 import br.edu.uniritter.liquid.democracy.service.OrganizationService;

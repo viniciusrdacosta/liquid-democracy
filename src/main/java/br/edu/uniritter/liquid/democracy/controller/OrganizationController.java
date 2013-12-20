@@ -12,7 +12,6 @@ import br.com.caelum.vraptor.Result;
 import br.com.caelum.vraptor.Validator;
 import br.com.caelum.vraptor.validator.Validations;
 import br.edu.uniritter.liquid.democracy.annotation.Public;
-import br.edu.uniritter.liquid.democracy.model.Citizen;
 import br.edu.uniritter.liquid.democracy.model.Organization;
 import br.edu.uniritter.liquid.democracy.service.OrganizationService;
 
