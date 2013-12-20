@@ -12,4 +12,10 @@ public class AreaDao extends AbstractDao<Area> implements AreaRepository{
 	protected AreaDao(EntityManager entityManager) {
 		super(entityManager);
 	}
+
+	@Override
+	public void delete(Long id) {
+		Area area = findById(id);
+		delete(area);
+	}
 }
