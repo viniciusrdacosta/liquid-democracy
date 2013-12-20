@@ -36,6 +36,6 @@
 				<td colspan="2" style="text-align: center;">No Records Found.</td>
 			</c:if>
 		</table>
-		<a href="<c:url value="/project/new"/>">New Project</a>
+		<a  id="salvar" class="btn btn-default" href="<c:url value="/project/new"/>">New Project</a>
 	</div>
 </div>
