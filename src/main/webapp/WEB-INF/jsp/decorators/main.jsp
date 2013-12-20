@@ -24,11 +24,11 @@
 	<body>
 		<%@ include file="../template/header.jsp" %>
 		<div class="container"> 
-			<c:if test="${errors.size > 0}">
+			<c:if test="${fn:length(errors) > 0 }">
 				<div class="alert alert-danger alert-dismissable">
 			  		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
 					<c:forEach var="error" items="${errors}">
-				  		<strong>Error !</strong> ${error.message}
+				  		<strong>Error !</strong> ${error.message}<br>
 					</c:forEach>
 				</div>
 			</c:if >
@@ -40,6 +40,7 @@
 		<script type="text/javascript" src="${pageContext.request.contextPath}/javascripts/lib/bootstrap.min.js"></script>
 		<script type="text/javascript" src="${pageContext.request.contextPath}/javascripts/lib/underscore.min.js"></script>
 		<script type="text/javascript" src="${pageContext.request.contextPath}/javascripts/lib/holder.js"></script>
+		<form role="form" name="formDelete" action="" method="post"></form>
 	</body>
 </html>
 

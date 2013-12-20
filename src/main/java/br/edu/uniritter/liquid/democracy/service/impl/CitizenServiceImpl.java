@@ -40,4 +40,9 @@ public class CitizenServiceImpl implements CitizenService {
 	public List<Citizen> findByName(String name) {
 		return repository.findByName(name);
 	}
+
+	@Override
+	public Citizen findById(Long id) {
+		return repository.findById(id);
+	}
 }

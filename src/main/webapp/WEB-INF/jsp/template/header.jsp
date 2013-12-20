@@ -8,15 +8,15 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="home">Liquid Democracy</a>
+			<a class="navbar-brand" href="<c:url value="/home"/>">Liquid Democracy</a>
 		</div>
 		<div class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
-				<li><a href="about">About</a></li>
+				<li><a href="<c:url value="/about"/>">About</a></li>
 				<li><a href="<c:url value="/area"/>">Areas</a></li>
 				<li><a href="<c:url value="/project"/>">Projects</a></li>
-				<li><a href="<c:url value="/citizens"/>">Citizens</a></li>
-				<li><a href="#contact">Contact</a></li>
+				<li><a href="<c:url value="/citizen"/>">Citizens</a></li>
+				<li><a href="<c:url value="/organization"/>">Organizations</a></li>
 			</ul>
 			<c:choose>
 				<c:when test="${userInfo.user != null}">

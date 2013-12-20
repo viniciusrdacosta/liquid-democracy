@@ -15,4 +15,6 @@ public interface CitizenService {
 	void delete(Citizen citizen);
 	
 	List<Citizen> findByName(String name);
+	
+	Citizen findById(Long id);
 }

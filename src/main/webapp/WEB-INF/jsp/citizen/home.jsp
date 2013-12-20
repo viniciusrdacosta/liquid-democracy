@@ -1,32 +1,30 @@
 <div class="page-header">
 	<h1>Citizens</h1>
 </div>
-<div class="row">
-		<table class="table table-hover">
-			<thead>
-				<tr>
-					<th style="width: 50%">Name</th>
-				<th style="width: 50%">Description</th>
+
+	<table class="table table-hover">
+		<thead>
+			<tr>
+			<th style="width: 50%">Name</th>
+			<th style="width: 20%">CPF</th>
+			<th style="width: 20%">Candidate?</th>
+			<th style="width: 10%"></th>
+		</tr>
+	</thead>
+	<c:forEach var="citizen" items="${citizens}">
+		<tbody>
+			<tr style="cursor: pointer; cursor: hand;">
+				<td style="width: 50%" onclick="edit(${citizen.id})">${citizen.name}</td>
+				<td style="width: 20%" onclick="edit(${citizen.id})">${citizen.cpf}</td>
+				<td style="width: 20%" onclick="edit(${citizen.id})">${citizen.candidate}</td>
+				<td style="width: 10%">
+					<a href="javascript:del(${citizen.id}, 'citizen', '${citizen.name}(${citizen.cpf})');" class="btn btn-danger btn-xs">Delete</a>
+				</td>
 			</tr>
-		</thead>
-		<c:forEach var="citizen" items="${citizens}">
-			<tbody>
-				<tr>
-					<td style="width: 50%">${citizen.name}</td>
-					<td style="width: 20%">${citizen.cpf}</td>
-					<td style="width: 20%">${citizen.cpf}</td>
-					<td style="width: 10%">
-						<form role="form" action="<c:url value="/citizen/delete"/>" method="post">
-							<button type="submit" class="btn btn-default">X</button>
-						</form>
-					</td>
-				</tr>
-			</tbody>
-		</c:forEach>
-		<c:if test="${fn:length(citizens) <= 0 }">
-			<td colspan="3" style="text-align: center;">No Records Found.</td>
-		</c:if>
-	</table>
-</div>
-<hr>
-<a href="/citizen/new" class="icon-user btn btn-mini btn-success">New Citizen</a>
+		</tbody>
+	</c:forEach>
+	<c:if test="${fn:length(citizens) <= 0 }">
+		<td colspan="3" style="text-align: center;">No Records Found.</td>
+	</c:if>
+</table>
+<a href="<c:url value="/citizen/new"/>" class="icon-user btn btn-success">New Citizen</a>
