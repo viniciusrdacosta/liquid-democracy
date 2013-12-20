@@ -16,14 +16,14 @@ public class CitizenServiceImpl implements CitizenService {
 		this.repository = repository;
 	}
 
-	@Override
-	public void create(Citizen candidate) {
-		repository.create(candidate);
+	@Override																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
+	public void create(Citizen citizen) {
+		repository.create(citizen);	
 	}
 
 	@Override
-	public List<Citizen> findAll() {
-		return repository.findAll();
+	public List<Citizen> findAll() {																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
+		return repository.findAll();																																																													
 	}
 
 	@Override

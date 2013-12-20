@@ -12,9 +12,7 @@ import br.com.caelum.vraptor.Resource;
 import br.com.caelum.vraptor.Result;
 import br.com.caelum.vraptor.Validator;
 import br.com.caelum.vraptor.validator.ValidationMessage;
-import br.com.caelum.vraptor.validator.Validations;
 import br.edu.uniritter.liquid.democracy.annotation.Public;
-import br.edu.uniritter.liquid.democracy.model.Area;
 import br.edu.uniritter.liquid.democracy.model.Citizen;
 import br.edu.uniritter.liquid.democracy.service.CitizenService;
 
@@ -25,7 +23,8 @@ public class CitizenController {
 	private CitizenService service;
 	private final Validator validator;
 
-	public CitizenController(Result result, CitizenService service, Validator validator) {
+	public CitizenController(Result result, CitizenService service,
+			Validator validator) {
 		this.result = result;
 		this.service = service;
 		this.validator = validator;
@@ -41,9 +40,6 @@ public class CitizenController {
 	@Public
 	@Get("/citizen/new")
 	public void add() {
-		Citizen citizen = new Citizen();
-		result.include("action", "new");
-		result.forwardTo(CitizenController.class).crud(citizen);
 	}
 
 	@Public
@@ -53,15 +49,14 @@ public class CitizenController {
 		service.create(citizen);
 		result.redirectTo(CitizenController.class).home();
 	}
-	
+
 	@Public
 	@Get("/citizen/edit/{id}")
 	public void edit(Long id) {
 		Citizen citizen = service.findById(id);
-		result.include("action", "edit/"+id);
-		result.forwardTo(CitizenController.class).crud(citizen);
+		result.include("citizen", citizen);
 	}
-	
+
 	@Public
 	@Post("/citizen/edit/{id}")
 	public void update(Citizen citizen) {
@@ -69,13 +64,7 @@ public class CitizenController {
 		service.update(citizen);
 		result.redirectTo(CitizenController.class).edit(citizen.getId());
 	}
-	
-	@Public
-	public void crud(Citizen citizen)
-	{
-		result.include("citizen", citizen);
-	}
-	
+
 	@Public
 	@Post("/citizen/delete/{id}")
 	public void delete(Long id) {
@@ -88,29 +77,34 @@ public class CitizenController {
 		validate(citizen);
 		validator.onErrorUsePageOf(CitizenController.class).add();
 	}
-	
+
 	private void validateEdit(final Citizen citizen) {
 		validate(citizen);
 		if (citizen != null)
 			if (citizen.getId() == null)
-				validator.add(new ValidationMessage("Id can not be empty", "citizen.id"));
+				validator.add(new ValidationMessage("Id can not be empty",
+						"citizen.id"));
 		validator.onErrorUsePageOf(CitizenController.class).home();
 	}
-	
+
 	private void validate(final Citizen citizen) {
 		if (citizen == null) {
-	        validator.add(new ValidationMessage("Citizen can not be null", "citizen"));
+			validator.add(new ValidationMessage("Citizen can not be null",
+					"citizen"));
 		} else {
 			if (citizen.getName() == null)
-	        	validator.add(new ValidationMessage("Name can not be empty", "citizen.name"));
-			
+				validator.add(new ValidationMessage("Name can not be empty",
+						"citizen.name"));
+
 			if (citizen.getCpf() == null)
-	        	validator.add(new ValidationMessage("CPF can not be empty", "citizen.cpf"));
-		
+				validator.add(new ValidationMessage("CPF can not be empty",
+						"citizen.cpf"));
+
 			if (citizen.getPassword() == null)
-	        	validator.add(new ValidationMessage("Password can not be empty", "citizen.password"));
-			
-			if(citizen.getCandidate() == null)
+				validator.add(new ValidationMessage(
+						"Password can not be empty", "citizen.password"));
+
+			if (citizen.getCandidate() == null)
 				citizen.setCandidate(false);
 		}
 	}

@@ -12,4 +12,6 @@ public class CitizenDao extends AbstractDao<Citizen> implements CitizenRepositor
 	protected CitizenDao(EntityManager entityManager) {
 		super(entityManager);
 	}
+	
+	
 }

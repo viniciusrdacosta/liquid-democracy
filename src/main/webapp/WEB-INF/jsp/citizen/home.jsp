@@ -14,7 +14,7 @@
 	<c:forEach var="citizen" items="${citizens}">
 		<tbody>
 			<tr style="cursor: pointer; cursor: hand;">
-				<td style="width: 50%" onclick="edit(${citizen.id})">${citizen.name}</td>
+				<td style="width: 50%" ><a href="<c:url value="/citizen/edit/${citizen.id}"/>">${citizen.name}</a></td>
 				<td style="width: 20%" onclick="edit(${citizen.id})">${citizen.cpf}</td>
 				<td style="width: 20%" onclick="edit(${citizen.id})">${citizen.candidate}</td>
 				<td style="width: 10%">

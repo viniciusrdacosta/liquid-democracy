@@ -9,7 +9,7 @@
 		<label for="cpf">CPF</label>
 		<input id="cpf" class="form-control" type="text" name="citizen.cpf" style="width: 300px;" value="${citizen.cpf}"><br>
 		<label for="password">Password</label>
-		<input id="password" class="form-control" type="text" name="citizen.password" style="width: 300px;" value="${citizen.password}"><br>
+		<input id="password" class="form-control" type="password" name="citizen.password" style="width: 300px;" value="${citizen.password}"><br>
 		<label class="checkbox" for="candidate">
 			<input id="candidate" type="checkbox" name="citizen.candidate" value="true" <c:if test="${citizen.candidate}">checked</c:if>> Candidate
 		</label>
