@@ -4,6 +4,10 @@
 	</div>
 
 	<div class="row">
+		<form role="form" action="<c:url value="/area/find"/>" method="post">
+			<input type="text" name="name" placeholder="enter name area" />
+			<button type="submit" class="btn btn-default">find</button>
+		</form>
 		<table class="table table-hover">
 			<thead>
 				<tr>

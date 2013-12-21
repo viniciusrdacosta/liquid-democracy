@@ -3,6 +3,7 @@ package br.edu.uniritter.liquid.democracy.controller;
 import static br.edu.uniritter.liquid.democracy.validator.CustomMatchers.notNull;
 import static org.hamcrest.Matchers.is;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import br.com.caelum.vraptor.Get;
@@ -31,8 +32,6 @@ public class AreaController {
 	@Public
 	@Get("/area")
 	public void home() {
-		List<Area> areas = service.findAll();
-		result.include("areas", areas);
 	}
 	
 	@Public
@@ -45,6 +44,19 @@ public class AreaController {
 	public void add(Area area) {
 		validate(area);
 		service.create(area);
+	}
+	
+	@Public
+	@Post("/area/find")
+	public void find(String name) {
+		List<Area> areas = new ArrayList<>();
+		if(name == null)
+			areas = service.findAll();
+		else 
+			areas = service.findByName(name);
+
+		result.include("areas", areas);
+		result.redirectTo(this).home();
 	}
 	
 	@Public
