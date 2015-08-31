@@ -1,9 +1,9 @@
 package br.edu.uniritter.liquid.democracy.controller;
 
-import static br.edu.uniritter.liquid.democracy.validator.CustomMatchers.notNull;
-import static org.hamcrest.Matchers.is;
+// import static br.edu.uniritter.liquid.democracy.validator.CustomMatchers.notNull;
+// import static org.hamcrest.Matchers.is;
 
-import java.io.Console;
+// import java.io.Console;
 import java.util.List;
 
 import br.com.caelum.vraptor.Get;
