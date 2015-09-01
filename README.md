@@ -1,18 +1,13 @@
 liquid-democracy
 ================
 
-Projeto inicialmente criado para a Disciplina de Desenvolvimento em Java da Uniritter, 2013.
+*Projeto inicialmente criado para a Disciplina de Desenvolvimento em Java da Uniritter, 2013.*
 
-Project initially created for Uniritter's Java Development Course in 2013.
+**Project initially created for Uniritter's Java Development Course in 2013.**
 
-Democracia líquida ou democracia delegativa é um projeto de democracia direta, no qual as votações 
-se realizam por um mandato específico para uma determinada questão, e é suplementado por uma recomendação 
-de ação (uma análise da questão em debate feita por especialistas na matéria, pró e contra). É um sistema 
-misto entre democracia direta e democracia representativa, no qual os representantes do Povo são designados 
-para votar em cada tema, ao invés de serem eleitos para um mandato amplo, com duração específica. Em alguns 
-casos, na democracia líquida, o mandato específico pode ser delegado. (WIKIPEDIA, 2013)
+*Democracia líquida ou democracia delegativa é um projeto de democracia direta, no qual as votações se realizam por um mandato específico para uma determinada questão, e é suplementado por uma recomendação de ação (uma análise da questão em debate feita por especialistas na matéria, pró e contra). É um sistem misto entre democracia direta e democracia representativa, no qual os representantes do Povo são designados para votar em cada tema, ao invés de serem eleitos para um mandato amplo, com duração específica. Em alguns casos, na democracia líquida, o mandato específico pode ser delegado. (WIKIPEDIA, 2013)*
 
-Liquid Democracy (AKA delegative democracy) is a direct democracy project, in which the votes are held by a specific mandate to a particular issue, and is supplemented by a recommendation of action (an analysis of the issue under discussion by experts in the field, and pro against). It is a mixed system of direct democracy and representative democracy in which the people's representatives are designated to vote on every issue, instead of being elected for a broad mandate, with specific duration. In some cases, as in liquid democracy, a specific mandate may be delegated.
+**Liquid Democracy (AKA delegative democracy) is a direct democracy project, in which the votes are held by a specific mandate to a particular issue, and is supplemented by a recommendation of action (an analysis of the issue under discussion by experts in the field, and pro against). It is a mixed system of direct democracy and representative democracy in which the people's representatives are designated to vote on every issue, instead of being elected for a broad mandate, with specific duration. In some cases, as in liquid democracy, a specific mandate may be delegated.**
 
 
 Links Relacionados:
